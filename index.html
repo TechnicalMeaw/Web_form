@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="contactForm">
+      <div class="content">
+
+        <div class="upper">
+          <div class="heading">
+            <h1>Create New Account</h1>
+          </div>
+  
+          <div class="profilePic">
+            <img
+              src="profileLogo.png"
+              alt="imageIcon"
+              width="100px"
+              height="100px"
+            />
+          </div>
+        </div>
+        
+
+        <form name="contactF" action="message.html" method="post">
+          <div class="fName">
+            <label for="fname">First Name:</label>
+            <input type="text" name="fname" placeholder="first name" required />
+          </div>
+
+          <div class="lName">
+            <label for="lname">First Name:</label>
+            <input type="text" name="lname" placeholder="last name" required />
+          </div>
+
+          <div class="Address">
+            <label for="address">Address:</label>
+            <textarea
+              name="address"
+              id="userAddress"
+              cols="21"
+              rows="5"
+              placeholder="address"
+            ></textarea>
+          </div>
+
+          <div class="Gender">
+            <label for="gender">Gender: </label>
+
+            <input class="transition" type="radio" id="userGenderM" name="gender" value="Male" />
+            <label for="Male">Male</label>
+
+            <input class="transition" type="radio" id="userGenderF" name="gender" value="Female" />
+            <label for="Female">Female </label>
+
+            <input class="transition" type="radio" id="userGenderO" name="gender" value="Other" />
+            <label for="Other">Other</label>
+          </div>
+
+          <div class="bDay">
+            <label for="birthday">Date of Birth:</label>
+            <input type="date" id="birthday" name="birthday" required />
+          </div>
+
+          <div class="single">
+            <label for="selection">Single:</label>
+
+            <select name="selection" id="selection" required>
+              <option value="yes">Yes</option>
+              <option value="no">No</option>
+            </select>
+          </div>
+
+          <div class="pass">
+            <label for="pwd">Password:</label>
+            <input
+              type="password"
+              id="pwd"
+              name="pwd"
+              placeholder="password"
+              required
+            />
+          </div>
+
+          <div class="pass">
+            <label for="confPwd">Confirm Password:</label>
+            <input
+              type="text"
+              id="confPwd"
+              name="confPwd"
+              placeholder="confirm password"
+              required
+            />
+          </div>
+
+          <div class="rememberMe">
+            <input class="transition"
+              type="checkbox"
+              id="rMe"
+              name="Rme"
+              value="remenberMe"
+              required
+            />
+            <label for="vehicle3">Remember me next time I log in.</label>
+          </div>
+
+          <div class="send">
+            <button class="transition" type="submit">Submit</button>
+          </div>
+        </form>
+      </div>
+
+      <script type="text/javascript" src="index.js"></script>
+    </div>
+  </body>
+</html>
